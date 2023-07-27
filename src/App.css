@@ -1,0 +1,79 @@
+
+.container {
+  margin-top: 3rem;
+  width: 250px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  box-shadow: 0px 10px 10px 1px #020202 ;
+  border-radius: 25px;
+  background-color: #1f2022;
+}
+
+
+form {
+  margin-top:1rem;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+ background-color:transparent;
+ color:#eeecec;
+ margin-top: 0%;
+  width: 90%;
+  height:17vh;
+  padding: 10px;
+  font-size: 30px;
+  border: 1px #5c5757;
+  border-radius: 5px;
+}
+
+.keypad {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  color: #eeb155;
+  background-color: #3e4443;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+
+button:hover {
+  background-color: #746565;
+}
+
+button:active {
+  background-color: #cec9c9;
+  transform: scale(0.85);
+}
+
+
+button:nth-child(16),
+button:nth-child(17) {
+  grid-column: span 2;
+}
+
+button:nth-child(16) {
+  background-color: #3e4443;
+  color:#ca966c;
+}
+button:nth-child(16):hover{
+ background-color:#5c5757;
+}
+
+button:nth-child(17) {
+  background-color:#ca966c; 
+  color: #242323;
+}
+
+ 
+
