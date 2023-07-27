@@ -30,7 +30,8 @@ function App() {
         <input type="text" value={result} readOnly />
       </form>
       <div className="keypad">
-        {['7', '8', '9', '+', '4', '5', '6', '-', '1', '2', '3', '*', '0', '.', 'C', '/'].map(
+        {['7', '8', '9', '+', '4', '5', '6', '-', '1', '2', '3', '*', '0', '.', '/'
+        ].map(
           (item) => (
             <button key={item} onClick={() => handleButtonClick(item)}>
               {item}
@@ -41,7 +42,6 @@ function App() {
         <button onClick={handleCalculate}>=</button>
       </div>
     </div>
-
   );
 }
 
