@@ -1,12 +1,19 @@
-
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container {
-  margin-top: 3rem;
+  margin-top: 1rem;
   width: 250px;
-  height: auto;
+  height: 80vh;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
-  box-shadow: 0px 10px 10px 1px #020202 ;
+  box-shadow: 0px 10px 15px 0px #070707 ;
   border-radius: 25px;
   background-color: #1f2022;
 }
@@ -40,19 +47,20 @@ button {
   padding: 10px;
   font-size: 20px;
   border: none;
-  color: #eeb155;
-  background-color: #3e4443;
+  color: #09f5cd;
+  background-color: #414645;
   border-radius: 10px;
   cursor: pointer;
   transition: transform 0.3s ease; 
 }
 
 button:hover {
-  background-color: #746565;
+  background-color: #78807e;
+  color: #00ffd5;
 }
 
 button:active {
-  background-color: #cec9c9;
+  background-color: #a39e9e;
   transform: scale(0.85);
 }
 
@@ -64,16 +72,32 @@ button:nth-child(17) {
 
 button:nth-child(16) {
   background-color: #3e4443;
-  color:#ca966c;
+  color:#09f5cd;
 }
 button:nth-child(16):hover{
  background-color:#5c5757;
 }
 
 button:nth-child(17) {
-  background-color:#ca966c; 
+  background-color:#5cc9b6; 
   color: #242323;
+  font-size: 25px;
 }
+
+@media screen and (max-width<= 768px) {
+  .container {
+    width:250px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 428px), screen and (max-width: 320px) {
+  .container {
+    width: 250px;
+    height: auto;
+  }
+}
+
 
  
 
